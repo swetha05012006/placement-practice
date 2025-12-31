@@ -1,0 +1,291 @@
+conditional statements
+1..#include<stdio.h>
+int main()
+{
+    int a=50,b=90;
+    if(a>b)
+    {
+     printf("%d",a);
+    }
+    else
+    {
+        printf("%d",b);
+    }
+
+return 0;
+}
+output:90
+2.#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter a num");
+    scanf("%d",&num);
+    if(num>0)
+    {
+         printf("is a positive number");
+    }
+    else{
+        printf("is a negative number");
+    }
+
+
+return 0;
+}
+output:enter a num20
+is a positive number
+enter a num-50
+is a negative number
+3.#include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%C",&ch);
+    if(ch>='A' && ch<='Z')
+    {
+       printf("uppercase");
+    }
+    else
+    {
+        printf("lowercase");
+    }
+
+
+return 0;
+}
+output:K
+uppercase
+4.#include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%d",&ch);
+    if(ch>='0' && ch<='9')
+    {
+       printf("digit");
+    }
+    else
+    {
+        printf("not digit");
+    }
+
+
+return 0;
+}
+output:S
+not digit
+5.#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a==1)
+            printf("sunday");
+        else if(a==2)
+            printf("monday");
+        else if(a==3)
+            printf("tuesday");
+        else if(a==4)
+            printf("wednesday");
+        else if(a==5)
+            printf("thursday");
+        else if(a==6)
+            printf("friday");
+        else if(a==7)
+            printf("saturday");
+        else
+            printf("invalid");
+return 0;
+}
+output:5
+Thursday
+0
+invalid
+6.#include<stdio.h>
+int main()
+{
+    int a,b;
+    char ch;
+    scanf("%d %d %c",&a,&b,&ch);
+    if(ch=='+')
+        printf("a+b");
+    else if(ch=='-')
+        printf("a-b");
+    else if(ch=='*')
+        printf("a*b");
+    else if(ch=='/')
+        printf("a/b");
+    else if(ch=='%')
+        printf("a%b");
+    else
+       printf("invalid");
+
+return 0;
+}
+output:2
+8
+k
+invalid
+7.#include<stdio.h>
+int main()
+{
+    int year;
+    scanf("%d",&year);
+    if(year%4==0)
+    {
+    if(year%100==0)
+    {
+    if(year%400==0)
+     printf("leap year");
+    else
+        printf("not a leap year");
+    }
+    else
+        printf("leap year");
+    }
+    else
+        printf("not a leap year");
+}
+
+output:2024
+leap year
+8.#include<stdio.h>
+int main()
+{
+    char grade;
+    scanf("%c",&grade);
+    switch(grade)
+    {
+      case 'A' ...'Z':
+      printf("uppercase");break;
+      case 'a'...'z':
+      printf("lowercase");break;
+      case '0'...'9':
+      printf("digits");break;
+      default:
+        printf("invalid");
+    }
+    return 0;
+}
+output:k
+lowercase
+9.#include<stdio.h>
+int main()
+{
+    int a,b;
+    char ch;
+    scanf("%d %d %c",&a,&b,&ch);
+    switch(ch)
+    {
+  case'+':
+    printf("a+b");break;
+  case'-':
+    printf("a-b");break;
+  case'*':
+    printf("a*b");break;
+  case'/':
+    printf("a/b");break;
+  case'%':
+    printf("a%b");break;
+  default:
+    printf("invalid");
+    }
+    return 0;
+}
+output:5 9
++
+a+b
+10.#include <stdio.h>
+
+int main()
+{
+    int n,sum=0;
+    scanf("%d",&n);
+    for(int itr=1;itr<=n/2;itr+=1)
+    {
+     if(n%itr==0)
+        sum+=itr;
+    }
+    if(sum>n)
+        printf("abundant");
+    else if(n==sum)
+        printf("perfect");
+    else
+        printf("deficient");
+
+    return 0;
+}
+
+output:12
+abundant
+11.int main()
+{
+    int n,m,sum1=0,sum2=0;
+    scanf("%d%d",&n,&m);
+    int itr;
+    for(itr=1;itr<=n/2;itr+=1)
+    {
+        if(n%itr==0)
+            sum1+=itr;
+    }
+    for( itr=1;itr<=m/2;itr+=1)
+    {
+        if(m%itr==0)
+            sum2+=itr;
+    }
+      if(m==sum1 &&  n==sum2)
+            printf("is amblicable number");
+      else
+        printf("is not amblicable number");
+    }
+output:220
+284
+is amblicable number
+patterns
+12.#include <stdio.h>
+
+int main()
+{
+   int n,row,col;
+   scanf("%d",&n);
+   for(row=1;row<=n;printf("\n"),row+=1)
+   {
+       for(col=1;col<=n-row;col+=1)
+            printf("   ");
+       for(col=1;col<=row*2-1;col++)
+            printf(" * ");
+   }
+
+    return 0;
+}
+output:5
+             *
+          *  *  *
+       *  *  *  *  *
+    *  *  *  *  *  *  *
+ *  *  *  *  *  *  *  *  *
+13.#include <stdio.h>
+
+int main()
+{
+   int n,row,col;
+   scanf("%d",&n);
+   for(row=1;row<=n;printf("\n"),row+=1)
+   {
+       for(col=1;col<=row;col+=1)
+            printf(" * ");
+       for(col=1;col<=(n-row)*2;col++)
+            printf("   ");
+       for (col=1;col<=row;col+=1)
+            printf(" * ");
+   }
+
+    return 0;
+}
+
+output:5
+ *                          *
+ *  *                    *  *
+ *  *  *              *  *  *
+ *  *  *  *        *  *  *  *
+ *  *  *  *  *  *  *  *  *  *

@@ -1,0 +1,168 @@
+basic I/o
+1.#include<stdio.h>
+int main()
+{
+float a=9.85,b=8.78;
+printf("%.2f %.2f",a,b);
+scanf("%f",&a,&b);
+return 0;
+}
+output:9.85 8.78
+2.#include<stdio.h>
+int main()
+{
+int a=58,b=79;
+printf("%x",a,b);
+scanf("%x",&a,&b);
+return 0;
+}
+output:3a
+3.#include<stdio.h>
+int main()
+{
+int a=69;
+printf("%o",a);
+scanf("%o",&a);
+return 0;
+}
+output:105
+4.#include<stdio.h>
+int main()
+{
+char a='s';
+printf("%d",a);
+return 0;
+}
+output:115
+5.#include<stdio.h>
+int main()
+{
+    int a=58,b=95;
+    printf("%+d %+d",a,b);
+    printf("%d %d",-a,-b);
+    return 0;
+}
+output:+58 +95-58 -95
+6.#include<stdio.h>
+int main()
+{
+    int a=58,b=95,c=88;
+    c=a;
+    a=b;
+    a=c;
+    printf("%d\n %d\n %d\n",a,b,c);
+    return 0;
+}
+output:58
+ 95
+ 88
+7.#include<stdio.h>
+int main()
+{
+    float a=9.5,b=3.8;
+    printf("%.16Lf",a/b);
+    return 0;
+}
+output:2.5000000000000000
+8.#include<stdio.h>
+int main()
+{
+    int n,m,a=25689;
+    n=a/10;
+    printf("%d\t",n);
+    m=a%10;
+    printf("%d",m);
+    return 0;
+}
+output:2568    9
+9.#include<stdio.h>
+int main()
+{
+    int n,m,a=256;
+    n=a/10;
+    m=n%10;
+    printf("%d",m);
+return 0;
+}
+output:5
+10.#include<stdio.h>
+int main()
+{
+    int a=4;
+    printf("%d",a*a);
+    printf("%d",a*a*a);
+return 0;
+}
+output:16
+64
+11.#include<stdio.h>
+int main()
+{
+    int a=50,b=90;
+    if(a<b)
+    {
+     printf("%d",a);
+    }
+    else
+    {
+        printf("%d",b);
+    }
+
+return 0;
+}
+output:50
+12.#include<stdio.h>
+int main()
+{
+    int a=50,b=90;
+    if(a>b)
+    {
+     printf("%d",a);
+    }
+    else
+    {
+        printf("%d",b);
+    }
+
+return 0;
+}
+output:90
+13.#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter a num");
+    scanf("%d",&num);
+    if(num>0)
+    {
+         printf("is a positive number");
+    }
+    else{
+        printf("is a negative number");
+    }
+
+
+return 0;
+}
+output:enter a num20
+is a positive number
+enter a num-50
+is a negative number
+14.#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    long fact=1;
+    int itr=1;
+    while(itr<=n)
+    {
+     fact*=itr;
+     itr+=1;
+    }
+    printf("%d",fact);
+    return 0;
+}
+
+
+output:120
