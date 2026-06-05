@@ -1,0 +1,121 @@
+java
+data types and variables
+1. public class Main{
+     public static void main(String args[]){
+     int a = 40;
+     int b = 10;
+     int c = 20;
+     int d = a+b+c;
+     System.out.print(d);
+     }
+ }
+2. public class Main{
+     public static void main(String args[]){
+     int container=58;
+     String container2="mighty";
+     System.out.print(container);
+     System.out.print(container2);
+     }
+ }
+
+java new
+
+English code -> byte code ->jvm is a machine code -> machine variable code (it can be executed)
+main function  important
+class hello must used ->it is object oriented program
+variables and data types
+1.
+public class Main {
+    public static void main (String[] args) {
+       int documents = 54;
+       String documents2 = "ziyan";
+       float documents3 = 53.1f;
+       System.out.print(documents);
+       System.out.print(documents2);
+       System.out.print(documents3);
+    } 
+}
+    
+2.add the variables in 3
+public class Main {
+    public static void main (String[] args) {
+       int star1 = 56;
+       int star2 = 10;
+       int star3 = 5;
+       System.out.print(star1+star2+star3);
+    } 
+}
+    
+3.public class Main {
+    public static void main (String[] args) {
+       int star1 = 56;
+       String rhythm = "r";
+       String star2 = rhythm;
+       System.out.print(star1);
+       System.out.print(star2);
+    } 
+}
+how to get user input
+1.import java.util.Scanner;
+   
+   class Main{
+       public static void main(String args[])
+       {
+           Scanner star = new Scanner(System.in);
+           int a = star.nextInt();
+           int b = star.nextInt();
+           System.out.print(a+b);
+       }
+   }
+2. import java.util.Scanner;
+   
+   class Main{
+       public static void main(String args[])
+       {
+         Scanner star = new Scanner(System.in);
+         String a = star.nextLine();
+         String b = star.nextLine();
+         System.out.print(a);
+
+       }
+   }
+3.assessment
+ import java.util.Scanner;
+ class Main{
+     public static void main(String args[]){
+         Scanner scan = new Scanner(System.in);
+         String name = scan.nextLine();
+         int age = scan.nextInt();
+         scan.nextLine();
+         String address = scan.nextLine();
+         System.out.println("My name is "+name);
+         System.out.println("My age is "+age);
+         System.out.print("My address is "+address);
+        }
+   }
+  4.import java.util.Scanner;
+ class Main{
+     public static void main(String args[]){
+         Scanner scan = new Scanner(System.in);
+         int a = scan.nextInt();
+         int b = scan.nextInt();
+         int c = scan.nextInt();
+         int d = a*b*c;
+         int e = a+b+c;
+         System.out.print(d/e);
+        }
+    }
+  5.import java.util.Scanner;
+ class Main{
+     public static void main(String args[]){
+     Scanner scan = new Scanner(System.in);
+     String name = scan.nextLine();
+     double score = scan.nextDouble();
+     scan.nextLine();
+     String department = scan.nextLine();
+     System.out.println("My name is "+name);
+     System.out.println("My score is "+score/10);
+     System.out.print("My department is "+department);
+     } 
+    }
+    
